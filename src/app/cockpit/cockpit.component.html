@@ -5,7 +5,8 @@
     <!--<input type="text" class="form-control" [(ngModel)]="newServerName">-->
     <input type="text" class="form-control" #serverInputName>
     <label>Server Name</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+    <!--<input type="text" class="form-control" [(ngModel)]="newServerContent">-->
+    <input type="text" class="form-control" #serverInputContent>
     <br>
     <button class="btn btn-outline-primary" (click)="onAddServer(serverInputName)">Add Server</button>
     <br>
