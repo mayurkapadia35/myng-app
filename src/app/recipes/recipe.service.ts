@@ -1,4 +1,4 @@
-import {Recipe} from './recipe.model';
+import { Recipe } from './recipe.model';
 
 export class RecipeService {
   private recipes: Recipe[] = [
@@ -6,6 +6,6 @@ export class RecipeService {
       'wp-content/uploads/2016/09/14131701/best-ice-cream-in-mumbai.jpg?ssl=1?w=356&strip=all&quality=80')
   ];
   getRecipes () {
-    return this.recipes;
+    return this.recipes.slice();
   }
 }
